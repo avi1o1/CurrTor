@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>CurrTor</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>CurrTor</h1>
+      <h3>One stop destination to all your money laundering business!</h3>
+    </header>
+
+    <main>
+      <form>
+
+        <div id="amountDiv">
+          <p>Amount</p>
+          <input value="1.00" type="text" id="amount"/>
+        </div>
+
+        <div id="currDiv">
+          <div id="fromCurr">
+            <p>From</p>
+            <div class="flagCurr" id="fromFlagCurr">
+              <img src="https://flagsapi.com/IN/flat/48.png" />
+              <select id="from" name="from"> </select>
+            </div>
+          </div>
+
+          <div id="toCurr">
+            <p>To</p>
+            <div class="flagCurr" id="toFlagCurr">
+              <img src="https://flagsapi.com/US/flat/48.png" />
+              <select id="to" name="to"> </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="convertDiv">
+          <p> 1 INR is equal to 0.012 USD </p>
+          <button id="convert"> Convert </button>
+        </div>
+
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 CurrTor</p>
+    </footer>
+
+    <script src="currData.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
